@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jana Dome — Himachal Family Trip (2N/3D + extension)</title>
-<meta name="description" content="A peaceful, toddler-friendly 2-night / 3-day Kullu–Manali road-trip itinerary built around the Himalayan Ridge Glamping Dome at Jana, Naggar. Car-accessible, low-crowd, with verified distances, veg food and stay options.">
+<title>Jana Dome — Himachal Family Trip (1 July) · Stays, Food & Snow</title>
+<meta name="description" content="Peaceful, toddler-friendly Kullu–Naggar–Manali road-trip around the Himalayan Ridge Glamping Dome at Jana. Verified stay & food contacts, plus an honest July snow plan.">
 <meta name="theme-color" content="#0f1f1a">
 <meta property="og:title" content="Jana Dome — Himachal Family Trip">
-<meta property="og:description" content="Peaceful, toddler-friendly Kullu–Manali itinerary around the Jana glamping dome.">
+<meta property="og:description" content="Peaceful Kullu–Manali itinerary around the Jana glamping dome — with verified stay & food numbers.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1f1a'/%3E%3Cpath d='M12 74 L38 30 L54 56 L66 40 L88 74 Z' fill='%23e8d9b5'/%3E%3Cpath d='M38 30 L30 44 L46 44 Z' fill='%23ffffff'/%3E%3Ccircle cx='74' cy='28' r='8' fill='%23f0c04a'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1f1a'/%3E%3Cpath d='M12 74 L38 30 L54 56 L66 40 L88 74 Z' fill='%23e8d9b5'/%3E%3C/svg%3E">
@@ -15,7 +15,7 @@
   :root{
     --bg:#0e1714; --bg2:#13211c; --card:#172a23; --card2:#1d342b;
     --ink:#eef3ef; --muted:#a9bdb3; --line:#2a4338;
-    --gold:#e6b450; --green:#7fc99a; --leaf:#4f9d72; --rose:#e08d7a; --sky:#7fb8d6;
+    --gold:#e6b450; --green:#7fc99a; --leaf:#4f9d72; --rose:#e08d7a; --sky:#7fb8d6; --wa:#25d366;
     --shadow:0 18px 40px -22px rgba(0,0,0,.7);
     --radius:18px;
   }
@@ -30,54 +30,59 @@
       var(--bg);
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:920px;margin:0 auto;padding:0 18px}
+  .wrap{max-width:940px;margin:0 auto;padding:0 18px}
   a{color:var(--sky);text-decoration:none}
   a:hover{text-decoration:underline}
 
-  /* hero */
-  header.hero{padding:64px 0 30px;text-align:center}
-  .kicker{display:inline-block;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;
+  header.hero{padding:60px 0 26px;text-align:center}
+  .kicker{display:inline-block;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
     color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:7px 16px;background:rgba(230,180,80,.06)}
-  h1{font-size:clamp(2rem,5.4vw,3.1rem);line-height:1.08;margin:.5em 0 .2em;letter-spacing:-.02em}
+  h1{font-size:clamp(2rem,5.4vw,3.05rem);line-height:1.08;margin:.5em 0 .2em;letter-spacing:-.02em}
   h1 .sub{display:block;font-size:.42em;letter-spacing:.02em;color:var(--green);font-weight:600;margin-top:.55em}
-  .lede{color:var(--muted);max-width:620px;margin:.7em auto 0;font-size:1.04rem}
-  .meta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
-  .chip{font-size:.82rem;color:var(--ink);background:var(--card);border:1px solid var(--line);
-    border-radius:999px;padding:7px 14px}
+  .lede{color:var(--muted);max-width:640px;margin:.7em auto 0;font-size:1.04rem}
+  .meta-row{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
+  .chip{font-size:.82rem;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
   .chip b{color:var(--gold);font-weight:700}
 
-  section{padding:30px 0}
+  section{padding:28px 0}
   h2{font-size:1.5rem;letter-spacing:-.01em;margin:0 0 4px;display:flex;align-items:center;gap:.5em}
   h2 .em{font-size:1.15em}
   .section-note{color:var(--muted);margin:0 0 18px;font-size:.96rem}
 
-  /* answer cards */
+  /* big decision banner */
+  .banner{background:linear-gradient(180deg,rgba(224,141,122,.16),rgba(224,141,122,.05));
+    border:1px solid #6a4139;border-left:4px solid var(--rose);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+  .banner h2{color:var(--rose);margin-bottom:8px}
+  .banner p{margin:.4em 0;color:#f0ddd6}
+  .banner p strong{color:#fff}
+  .opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  .opt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+  .opt h4{margin:0 0 5px;font-size:.95rem;color:var(--ink)}
+  .opt.best h4{color:var(--green)}
+  .opt p{margin:0;color:var(--muted);font-size:.86rem}
+  .opt .verdict{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .opt.best .verdict{color:var(--green)} .opt.mid .verdict{color:var(--gold)} .opt.no .verdict{color:var(--rose)}
+
   .qa{display:grid;gap:14px}
-  .qcard{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);
-    border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+  .qcard{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
   .qcard h3{margin:0 0 6px;font-size:1.06rem}
   .qcard .tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
   .tag.warn{color:var(--rose)} .tag.ok{color:var(--green)} .tag.info{color:var(--sky)}
   .qcard p{margin:.35em 0 0;color:var(--muted)}
   .qcard p strong{color:var(--ink)}
 
-  /* itinerary table */
   .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-  table{border-collapse:collapse;width:100%;min-width:660px;background:var(--card);font-size:.93rem}
-  thead th{background:var(--card2);color:var(--gold);text-align:left;font-weight:700;font-size:.74rem;
-    letter-spacing:.1em;text-transform:uppercase;padding:13px 14px;border-bottom:1px solid var(--line)}
+  table{border-collapse:collapse;width:100%;min-width:680px;background:var(--card);font-size:.92rem}
+  thead th{background:var(--card2);color:var(--gold);text-align:left;font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:13px 14px;border-bottom:1px solid var(--line)}
   td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted)}
   td b{color:var(--ink)}
   tr:last-child td{border-bottom:none}
   .day{white-space:nowrap;color:var(--green);font-weight:700}
   .sleep{color:var(--gold);font-weight:600;white-space:nowrap}
-  .ext-head td{background:rgba(126,184,214,.08);color:var(--sky);font-weight:700;letter-spacing:.08em;
-    text-transform:uppercase;font-size:.72rem}
+  .ext-head td{background:rgba(126,184,214,.08);color:var(--sky);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
 
-  /* spot cards */
   .spots{display:grid;gap:14px}
-  .spot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
-    display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;box-shadow:var(--shadow)}
+  .spot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:start;box-shadow:var(--shadow)}
   .spot .ic{font-size:1.7rem;line-height:1;text-align:center;padding-top:2px}
   .spot h3{margin:0 0 3px;font-size:1.1rem}
   .spot .where{font-size:.82rem;color:var(--green);margin:0 0 7px}
@@ -85,35 +90,55 @@
   .spot .facts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
   .fact{font-size:.76rem;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink)}
   .fact.good{color:var(--green)} .fact.warn{color:var(--rose)}
-  .maplink{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:600;color:#0e1714;
-    background:var(--gold);padding:7px 13px;border-radius:9px}
+  .maplink{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:600;color:#0e1714;background:var(--gold);padding:7px 13px;border-radius:9px}
   .maplink:hover{text-decoration:none;filter:brightness(1.06)}
 
-  /* generic info grid */
+  /* stay / contact cards */
+  .stays{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .stay{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:17px 19px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .stay .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+  .stay h3{margin:0 0 2px;font-size:1.1rem}
+  .stay .loc{font-size:.82rem;color:var(--green);margin:0 0 9px}
+  .stay .rate{white-space:nowrap;font-size:.8rem;font-weight:700;color:var(--gold);background:rgba(230,180,80,.1);border:1px solid var(--line);border-radius:8px;padding:4px 9px}
+  .stay p.desc{margin:0 0 12px;color:var(--muted);font-size:.9rem;flex:1}
+  .contacts{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;padding:8px 13px;border-radius:9px;border:1px solid var(--line)}
+  .btn.call{background:var(--card2);color:var(--ink)}
+  .btn.wa{background:rgba(37,211,102,.14);color:#a9f0c4;border-color:#2f6b48}
+  .btn.web{background:transparent;color:var(--sky)}
+  .btn:hover{text-decoration:none;filter:brightness(1.1)}
+  .num2{font-size:.78rem;color:var(--muted);margin:8px 0 0}
+  .num2 a{color:var(--muted);text-decoration:underline}
+
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .ic-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
-  .ic-card h3{margin:0 0 8px;font-size:1.02rem;color:var(--ink)}
-  .ic-card ul{margin:0;padding-left:1.05em}
-  .ic-card li{margin:.32em 0;color:var(--muted);font-size:.92rem}
-  .ic-card li b{color:var(--ink)}
-  .pill{font-size:.7rem;font-weight:700;color:var(--gold);background:rgba(230,180,80,.1);
-    border:1px solid var(--line);border-radius:6px;padding:2px 7px;margin-left:4px}
+  .ic-card h3{margin:0 0 10px;font-size:1.02rem;color:var(--ink)}
+  .eat{border-bottom:1px solid var(--line);padding:10px 0}
+  .eat:first-of-type{padding-top:0}
+  .eat:last-child{border-bottom:none;padding-bottom:0}
+  .eat .n{font-weight:700;color:var(--ink);font-size:.95rem}
+  .eat .star{color:var(--gold);font-size:.8rem;font-weight:700;margin-left:5px}
+  .eat .d{color:var(--muted);font-size:.85rem;margin:2px 0 6px}
+  .eat .ph a{display:inline-flex;align-items:center;gap:5px;font-size:.83rem;font-weight:600;color:#a9f0c4;background:rgba(37,211,102,.12);border:1px solid #2f6b48;border-radius:8px;padding:4px 10px}
+  .eat .ph .nophone{color:var(--muted);background:none;border:none;font-weight:400;font-style:italic}
 
-  .callout{background:linear-gradient(180deg,rgba(224,141,122,.12),rgba(224,141,122,.04));
-    border:1px solid #5a3a33;border-left:3px solid var(--rose);border-radius:12px;padding:14px 18px;margin-top:14px}
+  .pill{font-size:.7rem;font-weight:700;color:var(--gold);background:rgba(230,180,80,.1);border:1px solid var(--line);border-radius:6px;padding:2px 7px;margin-left:4px}
+  .ic-card ul{margin:0;padding-left:1.05em}
+  .ic-card li{margin:.34em 0;color:var(--muted);font-size:.9rem}
+  .ic-card li b{color:var(--ink)}
+
+  .callout{background:linear-gradient(180deg,rgba(224,141,122,.12),rgba(224,141,122,.04));border:1px solid #5a3a33;border-left:3px solid var(--rose);border-radius:12px;padding:14px 18px;margin-top:14px}
   .callout b{color:var(--rose)}
-  .callout.calm{background:linear-gradient(180deg,rgba(127,201,154,.12),rgba(127,201,154,.04));
-    border-color:#2f5240;border-left-color:var(--green)}
+  .callout.calm{background:linear-gradient(180deg,rgba(127,201,154,.12),rgba(127,201,154,.04));border-color:#2f5240;border-left-color:var(--green)}
   .callout.calm b{color:var(--green)}
 
-  footer{padding:34px 0 60px;color:var(--muted);font-size:.84rem;text-align:center;border-top:1px solid var(--line);margin-top:20px}
-  footer a{color:var(--muted);text-decoration:underline}
-  .src{font-size:.78rem;color:var(--muted);line-height:2}
+  footer{padding:32px 0 60px;color:var(--muted);font-size:.84rem;text-align:center;border-top:1px solid var(--line);margin-top:18px}
+  .src{font-size:.78rem;color:var(--muted);line-height:1.9}
 
-  @media(max-width:620px){
-    .grid2{grid-template-columns:1fr}
+  @media(max-width:640px){
+    .grid2,.stays,.opts{grid-template-columns:1fr}
     .spot{grid-template-columns:38px 1fr}
-    header.hero{padding:44px 0 20px}
+    header.hero{padding:42px 0 18px}
   }
 </style>
 </head>
@@ -121,259 +146,260 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="kicker">Family Road-Trip · 2 Nights / 3 Days</span>
+    <span class="kicker">Family Road-Trip · arriving 1 July 2026</span>
     <h1>The Jana Dome Getaway
-      <span class="sub">Peaceful Kullu–Naggar–Manali · by car · toddler-friendly</span></h1>
-    <p class="lede">Built around your stay at the <b>Himalayan Ridge Glamping Dome</b> in Jana (~8,000 ft). Low crowds, short walks only, good food at every stop — and an optional +1 night to fit in Manikaran.</p>
+      <span class="sub">Peaceful Kullu–Naggar–Manali · by car · with a 3-yr-old</span></h1>
+    <p class="lede">Night 1 locked at the <b>Himalayan Ridge Glamping Dome</b>, Jana. Below: verified stay &amp; food contacts (call / WhatsApp), the spots worth your time — and an honest plan for the snow you asked for.</p>
     <div class="meta-row">
       <span class="chip">👨‍👩‍👦 2 adults + 3-yr-old</span>
       <span class="chip">🚗 Self-drive</span>
-      <span class="chip">🥾 Walks <b>≤ 20 min</b></span>
       <span class="chip">🌿 Crowd-light</span>
+      <span class="chip">📞 Verified numbers</span>
       <span class="chip">🥗 Veg food sorted</span>
     </div>
   </div>
 </header>
 
-<!-- YOUR QUESTIONS ANSWERED -->
+<!-- SNOW DECISION BANNER -->
 <section class="wrap">
-  <h2><span class="em">✅</span> Your questions, answered first</h2>
-  <p class="section-note">The two that change the plan are at the top.</p>
-  <div class="qa">
-
-    <div class="qcard">
-      <span class="tag warn">Naggar Castle · Skip in 2026</span>
-      <h3>Is Naggar Castle worth it? — Not this year.</h3>
-      <p><strong>It's closed for a major multi-year restoration</strong> (a ₹11.57-crore ADB-funded project that began early 2025). It was still shut and under active work as of <strong>March 2026</strong>; officials say it reopens only around <strong>2027–2028</strong>. Even when open, reviewers call it small (a 20–45 min visit) with steep stairs — not great with a toddler. <strong>I've removed it from your plan.</strong> You can still grab a lovely meal in Naggar village (Wool Café / Nightingale) and photograph the castle exterior if passing.</p>
+  <div class="banner">
+    <h2><span>❄️</span> Read first: snow on 1 July is the one catch</h2>
+    <p>You said snow is a <strong>must</strong> — but every source agrees that by <strong>early July the accessible snow near Manali has mostly melted</strong>. Reliable snow play is <strong>April–June (peak May–June)</strong>. July is also monsoon onset (landslide season). So a 1-July trip forces a choice:</p>
+    <div class="opts">
+      <div class="opt best">
+        <span class="verdict">★ Best fix</span>
+        <h4>Shift to mid/late June</h4>
+        <p>Snow odds flip from “maybe patches” to <b>likely real snow</b> at Rohtang/Marhi &amp; Solang, and monsoon risk drops. Same itinerary, far better payoff.</p>
+      </div>
+      <div class="opt mid">
+        <span class="verdict">Keep 1 July</span>
+        <h4>Chase snow at Marhi</h4>
+        <p>Drive the Rohtang road up to <b>Marhi (~3,300 m)</b> via a hired local taxi (permit). <b>Patches likely, not guaranteed</b> — high altitude, watch the toddler, day-trip only.</p>
+      </div>
+      <div class="opt no">
+        <span class="verdict">Keep 1 July</span>
+        <h4>Skip snow, stay safe</h4>
+        <p>Do the green <b>Sissu / Atal Tunnel</b> day instead — snowy peaks in view, zero altitude/permit stress. No snow underfoot.</p>
+      </div>
     </div>
-
-    <div class="qcard">
-      <span class="tag ok">Crowds · Your instinct is right</span>
-      <h3>Will Manali be city-chaos again? — Yes, the town is. So we stay out of it.</h3>
-      <p>Hard 2026 data backs you up: peak week in May 2026 saw <strong>24,000+ vehicles through the Atal Tunnel</strong> (built for ~3,000/day), and post-flood curbs have turned a 38 km Kullu–Manali drive into <strong>4–6 hours</strong> at peak. <strong>So you only dip into Manali for two quick sights and sleep in a quiet orchard/dome stay outside town</strong> — see “Where to sleep, peacefully.” Your nights stay calm and low-people.</p>
-    </div>
-
-    <div class="qcard">
-      <span class="tag info">Manikaran · Added (as the extra day)</span>
-      <h3>Manikaran with the kids — yes, but give it its own day.</h3>
-      <p>It's ~<strong>60 km / ~2 hrs each way from Naggar</strong> (winding valley road), so it's a full day, not a side-trip. Lovely hot springs + Gurudwara langar, but <strong>busy</strong> and the spring water is scalding — keep your son to the mixed-temperature bathing pools only. Perfect as your <strong>+1 extension day</strong>, paired with a pure-veg lunch in Kasol.</p>
-    </div>
-
+    <p style="margin-top:14px"><strong>My recommendation:</strong> if June is at all possible, take it. If 1 July is fixed, plan the Marhi snow day <em>and</em> keep Sissu as the safe backup for the morning the road is shut. Tell me which lane and I'll finalise it.</p>
   </div>
 </section>
 
-<!-- ITINERARY TABLE -->
+<!-- QUESTIONS ANSWERED -->
 <section class="wrap">
-  <h2><span class="em">🗺️</span> The itinerary at a glance</h2>
-  <p class="section-note">Core trip = 2 nights / 3 days. Add the blue rows to extend by 1 night.</p>
+  <h2><span class="em">✅</span> Your questions, answered</h2>
+  <div class="qa">
+    <div class="qcard">
+      <span class="tag warn">Naggar Castle · Skip 2026</span>
+      <h3>Naggar Castle — closed.</h3>
+      <p>Shut for a multi-year ₹11.57-cr restoration; still under work in <strong>March 2026</strong>, reopening ~2027–28. Removed from the plan — but you can still eat brilliantly in Naggar (see food).</p>
+    </div>
+    <div class="qcard">
+      <span class="tag ok">Crowds · You're right</span>
+      <h3>Manali town is chaos — so we sleep outside it.</h3>
+      <p>May 2026 saw <strong>24,000+ vehicles/week</strong> through the Atal Tunnel; post-flood jams hit 4–6 hrs. You only dip into Manali for two quick sights and sleep in a <strong>quiet orchard/dome stay</strong> (see “Where to sleep”).</p>
+    </div>
+    <div class="qcard">
+      <span class="tag warn">Manikaran · Skip in July</span>
+      <h3>Manikaran — dropped for a July trip.</h3>
+      <p>I added it earlier, but the <strong>monsoon makes the Parvati Valley dangerous</strong>: flash-flood deaths near Manikaran (Mar 2025) and Kasol (Aug 2025) on a single dead-end road. Not worth the risk with a toddler in July. Save it for a dry-season trip.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ITINERARY -->
+<section class="wrap">
+  <h2><span class="em">🗺️</span> The itinerary (1 July, 2N/3D + extension)</h2>
+  <p class="section-note">Day 3 shows both snow lanes — pick one when you decide June vs July.</p>
   <div class="table-scroll">
     <table>
-      <thead>
-        <tr><th>Day</th><th>Morning</th><th>Afternoon / Evening</th><th>Where you sleep</th></tr>
-      </thead>
+      <thead><tr><th>Day</th><th>Plan</th><th>Eat</th><th>Sleep</th></tr></thead>
       <tbody>
         <tr>
-          <td class="day">Day 1<br>Arrive</td>
-          <td>Drive in, check into the <b>Jana Dome</b>, settle &amp; soak in the valley view.</td>
-          <td><b>Jana Waterfall</b> (2 km) + the famous <b>Himachali village thali</b> at the waterfall dhaba. Sunset &amp; bonfire at the dome.</td>
+          <td class="day">Day 1<br>1 Jul</td>
+          <td>Drive in, settle into the <b>Jana Dome</b>. <b>Jana Waterfall</b> (2 km) + sunset at the dome.</td>
+          <td>Himachali village thali at the waterfall dhaba.</td>
           <td class="sleep">🏕️ JANA DOME</td>
         </tr>
         <tr>
-          <td class="day">Day 2<br>Manali sights</td>
-          <td>Scenic left-bank drive toward Manali. Veg lunch stop in <b>Naggar</b> (skip the closed castle).</td>
-          <td><b>Hidimba Temple</b> (cedar forest, yak &amp; angora rabbits, pony ride) → <b>Van Vihar</b> boating + kids' play area. Quiet veg dinner.</td>
-          <td class="sleep">🌲 Quiet stay<br>(Prini / Jagatsukh)</td>
+          <td class="day">Day 2<br>2 Jul</td>
+          <td>Scenic drive to Manali. <b>Hidimba Temple</b> (yaks, rabbits, pony) + <b>Van Vihar</b> boating &amp; kids' play.</td>
+          <td>Southern Souls (pure-veg, by Hidimba).</td>
+          <td class="sleep">🌲 GlampEco / The Himalayan</td>
         </tr>
         <tr>
-          <td class="day">Day 3<br>Play day</td>
-          <td><b>Solang Valley</b>: ropeway/gondola, snow &amp; meadow, gentle pony ride, toddler swings (ATV/zorb for parents).</td>
-          <td>Lunch at Solang, then drive home — <em>or</em> stay on for the extension below.</td>
-          <td class="sleep">🏡 Home<br>(or stay 1 more)</td>
+          <td class="day">Day 3<br>3 Jul</td>
+          <td><b>SNOW DAY</b> → up to <b>Marhi</b> (Rohtang road, local taxi + permit) for snow.<br><em>Backup:</em> green <b>Sissu / Atal Tunnel</b> day if the road's shut.</td>
+          <td>Cafe Sissu / dhaba en route.</td>
+          <td class="sleep">🏡 Home — or extend ↓</td>
         </tr>
         <tr class="ext-head"><td colspan="4">↓ Optional Extension · +1 Night / +1 Day</td></tr>
         <tr>
-          <td class="day">Day 3*<br>(if extending)</td>
-          <td>Same Solang play day as above…</td>
-          <td>…then return to your quiet base for the night instead of driving home.</td>
-          <td class="sleep">🌲 Quiet base</td>
+          <td class="day">Day 3*<br>(extend)</td>
+          <td>Same snow day, then a relaxed evening instead of the long drive home.</td>
+          <td>—</td>
+          <td class="sleep">🏔️ Tinan Khar (Sissu) / Solang Valley Resorts</td>
         </tr>
         <tr>
-          <td class="day">Day 4<br>Manikaran</td>
-          <td><b>Manikaran Sahib</b> (~2 hrs drive): hot springs + Gurudwara &amp; langar.</td>
-          <td>Pure-veg lunch in <b>Kasol</b> (Jim Morrison Cafe), then drive home (south via Bhuntar).</td>
+          <td class="day">Day 4<br>4 Jul</td>
+          <td><b>Solang Valley</b>: ropeway/gondola, pony ride, swings (ATV/zorb for parents), then drive home.</td>
+          <td>Cafe Solang / Solang stalls.</td>
           <td class="sleep">🏡 Home</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div class="callout calm"><b>Why this order:</b> Jana/Naggar sits <em>between</em> Kullu and Manali, so Day 1 stays local, Day 2–3 head north to the fun stuff, and the optional Manikaran day points back south toward home — almost no backtracking with a tired toddler.</div>
-</section>
-
-<!-- THE SPOTS -->
-<section class="wrap">
-  <h2><span class="em">📍</span> The 5 spots (tap to navigate)</h2>
-  <p class="section-note">Every one is car-accessible with only a short walk. Map buttons open Google Maps.</p>
-  <div class="spots">
-
-    <div class="spot">
-      <div class="ic">💧</div>
-      <div>
-        <h3>Jana Waterfall + village dhaba</h3>
-        <p class="where">~2 km / 10 min from the dome</p>
-        <p>A pretty forest waterfall, and right beside it the famous family-run dhabas serving an organic <b>Himachali thali</b> — red rice, rajma, <i>siddu</i> with ghee (~₹200/head). Your easiest, tastiest first day.</p>
-        <div class="facts"><span class="fact good">🥾 ~15–20 min rocky walk</span><span class="fact">🅿️ Roadside parking</span><span class="fact good">🍽️ Local thali</span></div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jana+Waterfall+Naggar+Himachal">🧭 Navigate</a>
-      </div>
-    </div>
-
-    <div class="spot">
-      <div class="ic">🛕</div>
-      <div>
-        <h3>Hidimba (Hadimba) Devi Temple</h3>
-        <p class="where">Dhungri, Manali · ~24 km from dome</p>
-        <p>A unique 16th-century wooden pagoda shrine in a towering cedar forest. Flat, short walk from parking. Your son will love the decorated <b>yaks and fluffy angora rabbits</b> outside — and a slow pony ride. <em>(The one temple — no others, as you asked.)</em></p>
-        <div class="facts"><span class="fact good">🥾 5–10 min flat</span><span class="fact">🅿️ Ample parking</span><span class="fact good">🐐 Animals + pony</span></div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hidimba+Devi+Temple+Manali">🧭 Navigate</a>
-      </div>
-    </div>
-
-    <div class="spot">
-      <div class="ic">🚣</div>
-      <div>
-        <h3>Van Vihar — riverside park</h3>
-        <p class="where">Mall Road edge, Manali</p>
-        <p>A shaded deodar park on the Beas with <b>paddle/row boating (₹100/15 min)</b> and a <b>children's play area + swings</b>. The single best toddler spot of the trip — calm, green, fenced from the road.</p>
-        <div class="facts"><span class="fact good">🥾 Flat, stroller-OK</span><span class="fact good">⛵ Boating</span><span class="fact good">🛝 Kids' play area</span></div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Van+Vihar+Manali">🧭 Navigate</a>
-      </div>
-    </div>
-
-    <div class="spot">
-      <div class="ic">🎿</div>
-      <div>
-        <h3>Solang Valley — the “fun park” day</h3>
-        <p class="where">~14 km / 40 min from Manali</p>
-        <p>The adventure meadow. For your son: the <b>ropeway/gondola</b> (~₹450), a gentle pony ride, snow play and base-area swings. For mum &amp; dad (one at a time): ATV, zorbing or paragliding. Snack stalls &amp; cafés on site.</p>
-        <div class="facts"><span class="fact good">🚠 Ropeway (all ages)</span><span class="fact good">🐎 Pony rides</span><span class="fact warn">🛞 ATV/zorb = age 8+</span></div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Solang+Valley+Manali">🧭 Navigate</a>
-      </div>
-    </div>
-
-    <div class="spot">
-      <div class="ic">♨️</div>
-      <div>
-        <h3>Manikaran Sahib + Kasol <span class="pill">extension day</span></h3>
-        <p class="where">~60 km / ~2 hrs from Naggar (Parvati Valley)</p>
-        <p>Sacred hot springs and the riverside <b>Gurudwara</b> with its hot-spring-cooked <b>langar</b> (free meal — the halwa is famous). A full, scenic day. Pair with a pure-veg café lunch in Kasol, 4 km away.</p>
-        <div class="facts"><span class="fact good">🥾 Short, hold hands</span><span class="fact warn">♨️ Springs scalding — pools only</span><span class="fact warn">👥 Busy</span></div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Manikaran+Sahib+Gurudwara">🧭 Navigate</a>
-      </div>
-    </div>
-
-  </div>
-  <div class="callout"><b>Bonus swap:</b> Prefer snow + a lake over a long temple drive? Replace the Manikaran day with <b>Sissu via the Atal Tunnel</b> (~40 km from Manali) — the 9 km tunnel is a thrill in itself, and Sissu's roadside waterfall + lake + snow need <em>zero</em> walking. Quieter than Manikaran, too.</div>
+  <div class="callout calm"><b>Altitude note for your son:</b> after the Marhi snow day, <b>sleep low</b> (Manali/Solang ~2,000–2,500 m), not up at Sissu (~3,100 m). Keep snow play to 1–2 hrs and watch for fussiness/poor appetite.</div>
 </section>
 
 <!-- WHERE TO SLEEP -->
 <section class="wrap">
-  <h2><span class="em">🌙</span> Where to sleep, peacefully (Night 2)</h2>
-  <p class="section-note">All away from Mall Road, dome/orchard vibes like Jana, with food on site. Confirm live rates &amp; availability before booking.</p>
+  <h2><span class="em">🌙</span> Where to sleep — verified numbers</h2>
+  <p class="section-note">All numbers confirmed against the property's official page (June 2026). Call or WhatsApp to lock your 1–4 July dates &amp; July rate.</p>
+
+  <h3 style="color:var(--green);margin:6px 0 10px">Night 2 — peaceful base near Manali · pick one</h3>
+  <div class="stays">
+    <div class="stay">
+      <div class="top"><div><h3>GlampEco Stays</h3><p class="loc">Sethan / Prini · luxury geodesic domes</p></div><span class="rate">~₹9–13k</span></div>
+      <p class="desc">The region's top-rated dome stay (4.8★, ~1,650 reviews) — jacuzzi, spa, café, ~2,750 m. Closest in feel to your Jana dome and genuinely away from Mall Road. <b>Best pick.</b></p>
+      <div class="contacts">
+        <a class="btn call" href="tel:+917018026692">📞 70180 26692</a>
+        <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/918629049211">💬 WhatsApp</a>
+        <a class="btn web" target="_blank" rel="noopener" href="https://www.glampeco.com/">🌐 Site</a>
+      </div>
+    </div>
+    <div class="stay">
+      <div class="top"><div><h3>The Himalayan</h3><p class="loc">Hadimba Road, Manali · Gothic castle resort</p></div><span class="rate">₹11.9–23.8k</span></div>
+      <p class="desc">A Victorian-Gothic “castle” + cottages in apple/cherry orchards with a pool — quiet, elevated, very family-friendly if you'd rather a solid room than a dome. 4.5★.</p>
+      <div class="contacts">
+        <a class="btn call" href="tel:+918894005999">📞 88940 05999</a>
+        <a class="btn web" target="_blank" rel="noopener" href="https://thehimalayan.com/tariffs-reservations/">🌐 Tariffs</a>
+      </div>
+      <p class="num2">Landlines: <a href="tel:+911902250999">01902-250999</a> · <a href="tel:+911902250777">01902-250777</a></p>
+    </div>
+  </div>
+
+  <h3 style="color:var(--sky);margin:22px 0 10px">Extension night — snow-side / scenic · pick one</h3>
+  <div class="stays">
+    <div class="stay">
+      <div class="top"><div><h3>Tinan Khar</h3><p class="loc">Sissu, Lahaul · past the Atal Tunnel</p></div><span class="rate">ask</span></div>
+      <p class="desc">A quiet Lahaul stay on the <b>dry rain-shadow side</b> — safest base in monsoon, with snowy peaks, Sissu lake &amp; waterfall nearby. Magical and crowd-free. <em>(At ~3,100 m — fine for a day, but see the altitude note.)</em></p>
+      <div class="contacts">
+        <a class="btn call" href="tel:+919582720331">📞 95827 20331</a>
+        <a class="btn call" href="tel:+919914822548">📞 99148 22548</a>
+        <a class="btn web" target="_blank" rel="noopener" href="https://tinankhar.com/">🌐 Site</a>
+      </div>
+    </div>
+    <div class="stay">
+      <div class="top"><div><h3>Solang Valley Resorts</h3><p class="loc">Palchan · near Solang, Manali side</p></div><span class="rate">mid-up</span></div>
+      <p class="desc">A family resort right by Solang — lower altitude (safer sleep for your son after the snow day) and perfectly placed for the Day-4 ropeway &amp; activities. Good all-rounder.</p>
+      <div class="contacts">
+        <a class="btn call" href="tel:+919810036692">📞 98100 36692</a>
+        <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/919810036692">💬 WhatsApp</a>
+        <a class="btn web" target="_blank" rel="noopener" href="https://solangvalleyresorts.com/">🌐 Site</a>
+      </div>
+      <p class="num2">Alt: <a href="tel:+918377910668">83779 10668</a></p>
+    </div>
+  </div>
+  <p class="num2" style="margin-top:14px">↳ Your Jana dome's direct line isn't published anywhere reliable — book it via <a target="_blank" rel="noopener" href="https://www.makemytrip.global/hotels/himalayan_ridge_glamping_dome-details-kullu.html">MakeMyTrip</a> or DM <a target="_blank" rel="noopener" href="https://www.instagram.com/himalayanridge/">@himalayanridge</a>. I didn't want to print a guessed number.</p>
+</section>
+
+<!-- WHERE TO EAT -->
+<section class="wrap">
+  <h2><span class="em">🥗</span> Where to eat — 2 options each, with numbers</h2>
+  <p class="section-note">Veg-friendly, toddler-easy, well-rated. Numbers verified against published listings (one dhaba has no public number — just walk in).</p>
   <div class="grid2">
+
     <div class="ic-card">
-      <h3>GlampEco Stays <span class="pill">top pick · domes</span></h3>
-      <ul>
-        <li><b>Prini / Sethan side</b>, ~2,750 m — geodesic luxury domes, jacuzzi, spa &amp; café.</li>
-        <li>Rating <b>4.8/5</b> (~1,650 reviews) — the most-loved dome stay near Manali.</li>
-        <li>~$95–127/night · closest in feel to your Jana dome.</li>
-      </ul>
+      <h3>📍 Jana / Naggar (your base)</h3>
+      <div class="eat">
+        <span class="n">Sagar Thakur Dhaba</span><span class="star">· local favourite</span>
+        <p class="d">Pure-veg Himachali thali (siddu, red rice, rajma) right beside Jana Waterfall.</p>
+        <p class="ph"><span class="nophone">No public number — just walk in (2 km from the dome)</span></p>
+      </div>
+      <div class="eat">
+        <span class="n">Nightingale — The Italian</span><span class="star">★ 4.7</span>
+        <p class="d">Wood-fired pizza &amp; pasta near Naggar — easy toddler wins, valley terrace.</p>
+        <p class="ph"><a href="tel:+919805067107">📞 98050 67107</a></p>
+      </div>
     </div>
+
     <div class="ic-card">
-      <h3>The Himalayan <span class="pill">boutique resort</span></h3>
-      <ul>
-        <li>Gothic “castle” + cottages in <b>apple/cherry orchards</b> above Manali, with a pool.</li>
-        <li>Rating <b>4.5/5</b> (234 guests) · from ~₹3,000 pp.</li>
-        <li>Great for families who want a real room + grounds to roam.</li>
-      </ul>
+      <h3>📍 Manali (Hidimba / Van Vihar day)</h3>
+      <div class="eat">
+        <span class="n">Southern Souls Cafe <span style="color:var(--green)">(Pure Veg)</span></span><span class="star">★ 4.9</span>
+        <p class="d">100% pure-veg, literally beside Hidimba Temple. Dosa/idli/paneer + Jain options. <b>Top pick.</b></p>
+        <p class="ph"><a href="tel:+919885210212">📞 98852 10212</a></p>
+      </div>
+      <div class="eat">
+        <span class="n">Cafe 1947</span><span class="star">★ 4.3</span>
+        <p class="d">Riverside Old Manali classic — pizza, pasta, family favourite (keep your son away from the water edge).</p>
+        <p class="ph"><span class="nophone">No public number — walk-in</span></p>
+      </div>
     </div>
+
     <div class="ic-card">
-      <h3>Naggar Orchard Dome <span class="pill">stay near base</span></h3>
-      <ul>
-        <li>Luxury dome with private jacuzzi in a <b>Naggar apple orchard</b>, in-house restaurant.</li>
-        <li>Rating <b>5.0/5</b> (176 reviews) — same belt as Jana, very quiet.</li>
-        <li>Pick this if you'd rather not drive up to the Manali side.</li>
-      </ul>
+      <h3>📍 Snow / Sissu side (Day 3)</h3>
+      <div class="eat">
+        <span class="n">Cafe Sissu</span><span class="star">★ 4.4</span>
+        <p class="d">Warm indoor café past the Atal Tunnel — hot food, snowy-peak views, easy with a toddler.</p>
+        <p class="ph"><a href="tel:+917668172717">📞 76681 72717</a></p>
+      </div>
+      <div class="eat">
+        <span class="n">Shree Shyam Pure Veg Dhaba</span><span class="star">· Sissu</span>
+        <p class="d">Pure-veg dhaba ~1 min from Cafe Sissu — rajma-chawal, paratha, hot chai.</p>
+        <p class="ph"><span class="nophone">No public number — walk-in</span></p>
+      </div>
     </div>
+
     <div class="ic-card">
-      <h3>Best quiet <em>base area</em></h3>
-      <ul>
-        <li><b>Prini / Jagatsukh</b> — calm orchard villages, 15–25 min to Hidimba, ~45–60 min to Solang. Best peace + food + access balance.</li>
-        <li><b>Old Manali</b> — pick if cafés matter most (busier).</li>
-        <li><b>Naggar</b> — quietest + closest to Manikaran (thin dining).</li>
-      </ul>
+      <h3>📍 Solang (Day 4 activities)</h3>
+      <div class="eat">
+        <span class="n">Cafe Solang</span><span class="star">★ 4.6</span>
+        <p class="d">Convenient warm stop by the Solang–Palchan bridge — multi-cuisine, veg-friendly.</p>
+        <p class="ph"><span class="nophone">No public number — walk-in</span></p>
+      </div>
+      <div class="eat">
+        <span class="n">Robinhood Café</span><span class="star">· Naggar (en route)</span>
+        <p class="d">Rooftop veg café (the “Buddha burger”) if you swing back through Naggar.</p>
+        <p class="ph"><a href="tel:+919816567483">📞 98165 67483</a></p>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- FOOD -->
+<!-- SNOW DAY LOGISTICS -->
 <section class="wrap">
-  <h2><span class="em">🥗</span> Best-rated vegetarian food</h2>
-  <p class="section-note">Specific, well-reviewed spots near each stop.</p>
+  <h2><span class="em">🚖</span> Snow-day logistics (if you keep 1 July)</h2>
   <div class="grid2">
     <div class="ic-card">
-      <h3>Naggar / Jana (your base)</h3>
+      <h3>Permit &amp; taxi</h3>
       <ul>
-        <li><b>Jana waterfall dhabas</b> — organic Himachali thali, siddu.</li>
-        <li><b>Wool Café</b> — coffee, apple strudel, cheesecake (near castle).</li>
-        <li><b>Robinhood Café</b> — veg “Buddha burger,” casual.</li>
-        <li><b>Nightingale</b> — best wood-fired pizza in Naggar.</li>
+        <li><b>Rohtang/Marhi needs a permit</b> — apply online at <a target="_blank" rel="noopener" href="https://rohtangpermits.hp.gov.in/">rohtangpermits.hp.gov.in</a> (₹550/car, car must be &lt;10 yrs + valid PUC).</li>
+        <li><b>Out-of-state cars</b> face a tiny 100/day “Special Permit” quota that sells out by noon — so <b>hire a local Manali taxi</b> (₹4,000–6,500); they sort the permit. Confirm it's included.</li>
+        <li>Often <b>closed Tuesdays</b> for maintenance — check day-of.</li>
+        <li><b>Sissu/Atal Tunnel</b> needs no permit — self-drive freely (quick free e-Aagman online).</li>
       </ul>
     </div>
     <div class="ic-card">
-      <h3>Manali</h3>
+      <h3>Gear &amp; the toddler</h3>
       <ul>
-        <li><b>Southern Souls Cafe</b> — pure-veg South Indian <span class="pill">4.8</span></li>
-        <li><b>Bakery Bites</b> — pure-veg bakery, kid treats <span class="pill">4.9</span></li>
-        <li><b>Valentino's</b> — veg Italian, mountain views <span class="pill">4.5</span></li>
-        <li><b>Satyam Pure Veg</b> — Mall Road multi-cuisine.</li>
-      </ul>
-    </div>
-    <div class="ic-card">
-      <h3>Kasol / Manikaran <span class="pill">extension</span></h3>
-      <ul>
-        <li><b>Gurudwara Langar</b> — free pure-veg meal, famous halwa.</li>
-        <li><b>Jim Morrison Cafe</b> (Kasol) — <b>100% veg</b>, river views <span class="pill">4.0</span></li>
-        <li><b>Moon Dance Cafe</b> — veg-friendly, by the bridge <span class="pill">4.0</span></li>
-        <li><b>Southern Souls (Pure Veg)</b> — South Indian.</li>
-      </ul>
-    </div>
-    <div class="ic-card">
-      <h3>Sports &amp; play <span class="pill">simple</span></h3>
-      <ul>
-        <li><b>Toddler-OK:</b> Van Vihar boating, Solang ropeway, gentle pony rides (Hidimba/Solang).</li>
-        <li><b>Parents (take turns):</b> ATV/quad &amp; zorbing at Solang, paragliding, downhill cycling (Patlikuhl).</li>
-        <li><b>Note:</b> most active Solang sports are age 8+, so your son watches &amp; rides the pony/ropeway.</li>
+        <li>Rent snow suit + gumboots before Solang (~₹100–300 pp) — but <b>bring your son's own</b> waterproof suit, boots &amp; mittens (stall sizing for toddlers is unreliable).</li>
+        <li>Pack <b>spare dry clothes</b>, sunscreen &amp; sunglasses (snow glare).</li>
+        <li>Acclimatise a day in Manali first; <b>day-trip only, sleep low</b>; descend if he gets unusually fussy/sleepy or off his food.</li>
+        <li>Keep snow play to <b>1–2 hours</b>.</li>
       </ul>
     </div>
   </div>
-</section>
-
-<!-- CAUTIONS -->
-<section class="wrap">
-  <h2><span class="em">⚠️</span> Good to know before you drive</h2>
-  <div class="qa">
-    <div class="qcard">
-      <p><strong>Roads:</strong> the Naggar↔Manali left-bank road is currently <strong>potholed/patchy</strong> (monsoon damage + sewer works) — budget <strong>45–60 min</strong>, not 20. Drive Manikaran's Parvati Valley road slowly; it's narrow and shared with buses.</p>
-    </div>
-    <div class="qcard">
-      <p><strong>Season:</strong> best windows are <strong>Apr–Jun</strong> and <strong>late-Sep–Oct</strong>. <strong>Avoid the monsoon (Jul–Sep)</strong> in Parvati Valley — it's landslide/flash-flood prone; a Feb-2026 slide blocked the road above Manikaran. Don't drive past Manikaran toward Tosh/Barshaini. Check live road status each morning.</p>
-    </div>
-  </div>
+  <div class="callout"><b>Monsoon driving:</b> the Mandi–Kullu–Manali highway slips somewhere most July weeks. Build a slack day, never drive in heavy rain or at night, avoid riverside stretches when the Beas is high, and check road status every morning.</div>
 </section>
 
 <footer class="wrap">
-  <p>Made for Dominic's family trip · distances independently verified · June 2026.<br>
-  All figures from public travel + news sources and can shift — glance at live listings/road status before you go.</p>
-  <p class="src">Key sources: Tribune (Naggar Castle restoration &amp; road condition; Atal Tunnel traffic) · MakeMyTrip / Goibibo / Tripadvisor (stays, ratings, food) · Thrillophilia (Solang, Hidimba) · The Logical Indian (Parvati landslide, Feb 2026) · GlampEco, CultureTravel, The Himalayan (stays).</p>
+  <p>Made for Dominic's family trip · stay &amp; food numbers independently verified · June 2026.<br>
+  Figures from public travel + news sources and can change — confirm rates, permits &amp; road status before you go.</p>
+  <p class="src">Sources: GlampEco / The Himalayan / Tinan Khar / Solang Valley Resorts official sites · Tripadvisor (food &amp; ratings) · Tribune &amp; The Logical Indian (castle closure, traffic, Parvati floods) · rohtangpermits.hp.gov.in · Discover Kullu Manali (snow status).</p>
 </footer>
 
 </body>
